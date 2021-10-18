@@ -155,17 +155,19 @@ class HeapArray {
 
 	winCheck() {
 		if (this.calculateHeapSums() === 1) {
-			alert(`${this.turn === "You" ? "AI" : "You"} won!`);
+			setTimeout(() => {
+				alert(`${this.turn === "You" ? "AI" : "You"} won!`);
 
-			for (let i = 0; i < this.length; i++) {
-				this[i] = null;
-			}
+				for (let i = 0; i < this.length; i++) {
+					this[i] = null;
+				}
 
-			this.length = null;
-			this.turn = null;
-			this.playerHeap = null;
+				this.length = null;
+				this.turn = null;
+				this.playerHeap = null;
 
-			HeapArray.gameOver();
+				HeapArray.gameOver();
+			}, 2000);
 		}
 	}
 
