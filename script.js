@@ -107,7 +107,6 @@ class HeapArray {
 
 	aiMakeMove() {
 		let move = this.aiCalculateMove();
-		console.log(move);
 		this[move.index] -= move.amount;
 
 		this.updateElements();
@@ -141,7 +140,6 @@ class HeapArray {
 	switchTurn() {
 		if (this.moved || this.turn === "AI") {
 			this.turn = this.turn === "You" ? "AI" : "You";
-			console.log(`switch to ${this.turn}`);
 
 			this.playerHeap = null;
 			this.moved = false;
