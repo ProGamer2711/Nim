@@ -116,9 +116,10 @@ class HeapArray {
 		if (this.turn !== "You") return alert("It's not your turn!");
 
 		if (
-			this.playerHeap === undefined ||
-			this.playerHeap === null ||
-			this.playerHeap === index
+			(this.playerHeap === undefined ||
+				this.playerHeap === null ||
+				this.playerHeap === index) &&
+			this[index] > 0
 		) {
 			this.playerHeap = index;
 			this.moved = true;
