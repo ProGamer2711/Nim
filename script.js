@@ -175,9 +175,9 @@ class HeapArray {
 			`
 			<p>
 				In the game of Nim you have heaps of items (normally sticks; in this case
-				just numbers [for now]) <br />
+				just numbers [for now])
 				which you and an AI take from. You can choose any heap and you can take
-				any number of items from only that heap. <br />
+				any number of items from only that heap.
 				The goal is to leave your opponent with one item to take. In this case you
 				win.
 			</p>
