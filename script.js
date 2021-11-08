@@ -69,6 +69,12 @@ class HeapArray {
 	}
 
 	aiCalculateMove() {
+		if (this.calculateHeapSums() === 1)
+			return {
+				index: this.maxHeapIndex(),
+				amount: 1,
+			};
+
 		let heaps = this.toArray();
 
 		let largeHeaps = 0;
