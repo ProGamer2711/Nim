@@ -130,7 +130,7 @@ class HeapArray {
 			this.playerHeap = index;
 			this.moved = true;
 			this[index]--;
-			this.winCheck();
+			this.winCheck("You");
 		}
 
 		this.updateElements();
@@ -141,7 +141,7 @@ class HeapArray {
 			setTimeout(() => {
 				this.aiMakeMove();
 				this.switchTurn();
-				this.winCheck();
+				this.winCheck("AI");
 			}, 1000);
 		}
 	}
@@ -159,9 +159,9 @@ class HeapArray {
 		}
 	}
 
-	winCheck() {
+	winCheck(player) {
 		if (this.calculateHeapSums() === 0) {
-			alert(`${this.turn} won!`);
+			alert(`${player} won!`);
 
 			for (let i = 0; i < this.length; i++) {
 				this[i] = null;
