@@ -13,10 +13,10 @@ body {
 }
 
 #credit {
-	position: relative;
+	position: static;
 	bottom: 20px;
 	right: 20px;
-	font-size: 60%;
+	font-size: 50%;
 }
 
 button {
