@@ -13,7 +13,10 @@ body {
 }
 
 #credit {
-	font-size: 70%;
+	position: relative;
+	bottom: 20px;
+	right: 20px;
+	font-size: 60%;
 }
 
 button {
