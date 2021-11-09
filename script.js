@@ -187,6 +187,7 @@ class HeapArray {
 				win.
 			</p>
 			<button id='start-button' onclick='startGame()'>Start</button>
+			<p id="credit">First beaten with proof by KingOfDeath__</p>
 			`
 		);
 	}
