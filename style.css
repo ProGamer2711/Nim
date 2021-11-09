@@ -13,9 +13,9 @@ body {
 }
 
 #credit {
-	position: static;
-	bottom: 20px;
-	right: 20px;
+	position: relative;
+	bottom: 30px;
+	right: 30px;
 	font-size: 50%;
 }
 
